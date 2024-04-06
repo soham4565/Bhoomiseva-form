@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #7badb4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            appearance: none;
+        }
+
+        input[type="file"] {
+            width: calc(100% - 22px);
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="soham.java">
+        <h1>Application Form</h1>
+        <div class="container">
+            <label for="name">First Name</label>
+            <input type="text" name="fname" id="name" placeholder="Enter your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email">
+
+            <label for="phone">Phone No</label>
+            <input type="text" name="phone" placeholder="Enter your phone no">
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your Age">
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="education">Education Details</label>
+            <input type="text" name="education" id="education" placeholder="Highest Qualification">
+
+            <label for="ownership">Property Type</label>
+            <select name="ownership" id="ownership">
+                <option value="owned">Owned</option>
+                <option value="rented" selected>Rented</option>
+            </select>
+
+            <label for="aiocd">AIOCD Membership No(If Available)</label>
+            <input type="text" name="aiocd" id="aiocd" placeholder="Enter no here">
+
+            <label for="sme">SME Chamber Membership No(If Available)</label>
+            <input type="text" name="sme" id="sme" placeholder="Enter no here">
+
+            <label for="bhoomi">BhoomiSeva Influencer Code/Name (If Available)</label>
+            <input type="text" name="bhoomi" id="bhoomi" placeholder="Name of the person who introduced you (if any)">
+
+            <label for="occupation">Occupation</label>
+            <input type="text" name="occupation" id="occupation" placeholder="Current Occupation">
+
+            <label for="agricultural">Agricultural Education(If Available)</label>
+            <input type="text" name="agricultural" id="agricultural">
+
+            <label for="caste">Caste</label>
+            <input type="text" name="caste" id="caste" placeholder="Enter your caste">
+
+            <label for="caste_cert">Upload Caste Certificate</label>
+            <input type="file" id="caste_cert" name="caste_cert">
+
+            <label for="certificate">Upload Certificate</label>
+            <input type="file" id="certificate" name="certificate">
+
+            <label for="bank">Bank Details</label>
+            <input type="file" id="bank" name="bank">
+
+            <label for="aadhar">Aadhar Card</label>
+            <input type="file" id="aadhar" name="aadhar">
+
+            <label for="pan">PAN Card</label>
+            <input type="file" id="pan" name="pan">
+
+            <label for="voter">Voter ID</label>
+            <input type="file" id="voter" name="voter">
+
+            <label for="photo">Upload Your Photo</label>
+            <input type="file" id="photo" name="photo">
+
+            <label for="shop_address">In case of VLE and District Stockist please give shop address</label>
+            <input type="text" name="shop_address" id="shop_address" placeholder="Enter Shop address">
+
+            <label for="shop_dimension">Shop Dimention in Feet</label>
+            <input type="text" name="shop_dimension" id="shop_dimension" placeholder="frontagexDepthxHeight">
+
+            <label for="shop_sqft">Shop SqFt</label>
+            <input type="number" name="shop_sqft" id="shop_sqft" placeholder="Enter sqft">
+
+            <label for="shop_front">Shop Photo Front Profile</label>
+            <input type="file" id="shop_front" name="shop_front">
+
+            <label for="shop_right">Shop Photo Right Profile</label>
+            <input type="file" id="shop_right" name="shop_right">
+
+            <label for="shop_left">Shop Photo Left Profile</label>
+            <input type="file" id="shop_left" name="shop_left">
+
+            <h4>How did you hear about us?</h4>
+            <label for="friends">Friends</label>
+            <input type="checkbox" name="friends" id="friends">
+
+            <label for="social_media">Social Media</label>
+            <input type="checkbox" name="social_media" id="social_media">
+
+            <label for="others">Others</label>
+            <input type="checkbox" name="others" id="others">
+
+            <button class="btn">Apply Now</button>
+        </div>
+    </form>
+</body>
+
+</html>
